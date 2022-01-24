@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="457.0" prefWidth="520.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="showtotal" alignment="CENTER" prefHeight="71.0" prefWidth="166.0" text="0">
+      <font>
+         <Font size="36.0" />
+      </font></Label>
+   <GridPane alignment="CENTER" prefHeight="225.0" prefWidth="468.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+          <Button fx:id="buttonseven" onAction="#setseven" prefHeight="80.0" prefWidth="140.0" text="7" />
+         <Button fx:id="buttoneight" mnemonicParsing="false" onAction="#seteight" prefHeight="69.0" prefWidth="135.0" text="8" GridPane.columnIndex="1" />
+         <Button fx:id="buttonnine" mnemonicParsing="false" onAction="#setnine" prefHeight="73.0" prefWidth="145.0" text="9" GridPane.columnIndex="2" />
+         <Button fx:id="buttonfour" mnemonicParsing="false" onAction="#setfour" prefHeight="71.0" prefWidth="151.0" text="4" GridPane.rowIndex="1" />
+         <Button fx:id="buttonfive" mnemonicParsing="false" onAction="#setfive" prefHeight="70.0" prefWidth="182.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <Button fx:id="buttonsix" mnemonicParsing="false" onAction="#setsix" prefHeight="73.0" prefWidth="164.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         <Button fx:id="buttonone" mnemonicParsing="false" onAction="#setone" prefHeight="63.0" prefWidth="153.0" text="1" GridPane.rowIndex="2" />
+         <Button fx:id="buttontwo" mnemonicParsing="false" onAction="#settwo" prefHeight="72.0" prefWidth="180.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <Button fx:id="buttonthree" mnemonicParsing="false" onAction="#setthree" prefHeight="88.0" prefWidth="166.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         <Button fx:id="buttonzero" mnemonicParsing="false" onAction="#setzero" prefHeight="74.0" prefWidth="160.0" text="0" GridPane.rowIndex="3" />
+         <Button fx:id="buttonadd" mnemonicParsing="false" onAction="#add" prefHeight="94.0" prefWidth="174.0" text="Add" GridPane.columnIndex="3">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+         <Button fx:id="buttonsubtract" mnemonicParsing="false" onAction="#sub" prefHeight="74.0" prefWidth="170.0" text="Subtract" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+         <Button fx:id="buttonmultiply" mnemonicParsing="false" onAction="#multi" prefHeight="80.0" prefWidth="138.0" text="Multiply" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <font>
+               <Font size="18.0" />
+            </font></Button>
+         <Button fx:id="buttondelete" mnemonicParsing="false" onAction="#del" prefHeight="71.0" prefWidth="153.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <Label fx:id="current" alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="122.0" text="current #" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <Button fx:id="buttondivide" mnemonicParsing="false" onAction="#div" prefHeight="97.0" prefWidth="162.0" text="Divide" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </GridPane>
+</VBox>
